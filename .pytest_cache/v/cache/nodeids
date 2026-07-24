@@ -1,0 +1,4 @@
+[
+  "tests/test_parser.py::test_invalid_url",
+  "tests/test_parser.py::test_valid_url"
+]
