@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Pulse</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🚀 Page Pulse</h1>
+
+    <p>Analyze any website instantly.</p>
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="urlInput"
+            placeholder="https://example.com">
+
+        <button onclick="analyzeWebsite()">
+            Analyze
+        </button>
+
+    </div>
+
+    <div id="loading" class="loading">
+        Analyzing...
+    </div>
+
+    <div id="result"></div>
+
+</div>
+
+<footer>
+    Built for
+    <a href="https://digitalheroesco.com" target="_blank">
+        Digital Heroes Training Task
+    </a>
+</footer>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
